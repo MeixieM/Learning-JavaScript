@@ -1,16 +1,15 @@
-
+// grab the count-el element, store it in a countEl variable
 let countEl = document.getElementById("count-el")
-
-// intialize the count as 0
-
 let count = 0
 
-// listen for clicks on the increment button
-// increment the count variable when the button is clicked (log it out)
-function increment () {
+function increment() {
     count = count + 1
+    // set countEl's innerText to the count
     countEl.innerText = count
 }
 
-// change the count-el in the HTML to reflect the new count
+// 1. Create a function, save(), which logs out the count when it's called
 
+function save() {
+    console.log(count)
+}
