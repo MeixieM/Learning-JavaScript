@@ -1,6 +1,7 @@
 // grab the count-el element, store it in a countEl variable
 let saveEl = document.getElementById("save-el")
 let countEl = document.getElementById("count-el")
+let resetEl = document.getElementById("reset-el")
 let count = 0
 
 function increment() {
@@ -19,3 +20,8 @@ function save() {
     count = 0
 }
 
+function reset() {
+    countEl.textContent = 0
+    count = 0
+    saveEl.textContent = "Previous entries: "
+}
