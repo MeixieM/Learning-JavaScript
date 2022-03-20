@@ -1,26 +1,16 @@
-// document.getElementById('count-el').innerText = 5;
 
-// let count = 0
+let countEl = document.getElementById("count-el")
 
-// console.log(count)
+// intialize the count as 0
 
-// Challege #1
-// 1. Create a variable, myAge, and set its value to your age
-// let myAge = 21
+let count = 0
 
-// 2. Log the myAge variable to the console
-// console.log(myAge)
+// listen for clicks on the increment button
+// increment the count variable when the button is clicked (log it out)
+function increment () {
+    count = count + 1
+    countEl.innerText = count
+}
 
-//Challeng #2
-
-// 1. Create two variables, myAge and humanDogRatio
-let myAge = 21
-let humanDogRatio = 7
-
-// 2. Multiply the two together and store the result in myDogAge 
-myDogAge = myAge * humanDogRatio
-
-// 3. Log myDogAge to the console
-console.log(myDogAge)
-
+// change the count-el in the HTML to reflect the new count
 
